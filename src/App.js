@@ -115,7 +115,7 @@ class App extends Component{
             </div>
                 {this.state.view === 'landing' ? <Welcome 
                     clickHandler={this.clickHandler} /> : null}
-                {this.state.view === 'home' ? <Home /> : null}
+                {this.state.view === 'home' ? <Home changeThemeHandler={this.changeThemeHandler} /> : null}
             </div>
         );
     }

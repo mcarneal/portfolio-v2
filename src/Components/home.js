@@ -19,7 +19,7 @@ class Home extends Component{
         return(
             <BrowserRouter>
                 <div className='home'>
-                    <NavBar>
+                    <NavBar changeThemeHandler={this.props.changeThemeHandler}>
                         <Switch>
                             <Route path='/' render={()=> <Test />}/>
                             </Switch>

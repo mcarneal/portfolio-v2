@@ -97,7 +97,15 @@ export default function ResponsiveDrawer(props) {
             >
                     {text}
     </MenuItem>
-        ))}
+              ))}
+    <Divider />
+    <br></br>
+            <MenuItem
+                onClick={props.changeThemeHandler}
+            >
+        Change Theme
+    </MenuItem>
+
       </MenuList>
     </div>
   );
