@@ -11,3 +11,161 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+.App {
+    width : 100vw;
+    height : 100vh;
+    background-position : center center;
+    background-repeat : no-repeat;
+    background-color: #464646;
+    background-size : cover;
+}
+
+.home{
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    left : 0px;
+    top : 0px;
+}
+
+.navbar{
+    width : 100%;
+    position : relative;
+    top : 20%;
+}
+
+.navbar h1{
+    padding : 0px 20px;
+    color : white;
+}
+
+.navbar h1:hover{
+    font-weight : bold;
+    text-decoration : underline;
+    cursor : pointer;
+}
+
+
+.particles{
+    position : relative;
+    width : 100%;
+    height : 100%;
+    left : 0px;
+    top : 0px;
+}
+
+.particles canvas{
+    left : 0px;
+    position : absolute;
+    height: 100%;
+    width : 100%;
+}
+
+.welcome{
+    font-size : 3vw;
+    position : absolute;
+    top : 20%;
+    color : #f9f3f4;
+    text-align : center;
+    width : 100%;
+    line-height : 0.4em;
+}
+
+.btn{
+    font-weight : bold;
+    background-color : rgba(160,160,160,0.6);
+    color : maroon;
+    text-decoration : none;
+    border : #ccc 1px solid;
+    padding : 0px 15px;
+    border-radius : 8px;
+    line-height : 4em;
+    font-size : 3vw;
+}
+
+.change.theme{
+    z-index : 1;
+    position : absolute;
+    top : 4%;
+    left : 2%;
+}
+
+.resume{
+    position : absolute;
+    height : 100%;
+    width : 100%;
+}
+
+.jobs{
+    width : auto;
+    position : absolute;
+    height : 40%;
+    top : 13vh;
+}
+.apple{
+    margin-bottom : 5vh;
+}
+
+.bestbuy{
+    margin-bottom : 5vh;
+}
+
+.microcenter{
+    margin-bottom : 5vh;
+}
+
+
+.jobsdetail{
+    text-align : left;
+    display : inline-block;
+    color : white;
+}
+
+.jobdetails{
+    position : relative;;
+    height : auto;
+    color: white;
+}
+
+
+@media only screen and (min-width: 768px){    
+.navbar h1{
+        padding : 0px 20px;
+        color : white;
+        display : inline;
+    }
+
+    .welcome{
+        font-size : 1vw;
+    }
+
+    .btn{
+        font-size : 1vw;
+    }  
+
+    .jobs{
+        position : absolute;
+        top : 20vh;
+        left : 20%;
+    }
+
+    .apple{
+        margin-bottom : 10vh;
+    }
+
+    .bestbuy{
+        margin-bottom : 10vh;
+    }
+
+    .jobdetails{
+        position : fixed;
+        color : white;
+        float : right;
+        width : 100%;
+        top : 20vh;
+    }
+
+
+}
