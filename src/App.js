@@ -108,6 +108,8 @@ class App extends Component{
     render(){
         return (
             <div className='App' style={{backgroundImage :`url(${this.state.background})`}}>
+            <div className='bg' style={{backgroundImage :`url(${this.state.background})`}}>
+        </div>
             <div className='particles'>
                 <Particles
                     params={this.state.particles}
