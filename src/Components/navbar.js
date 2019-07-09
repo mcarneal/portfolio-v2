@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Divider from '@material-ui/core/Divider';
@@ -18,8 +19,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import Test from './test.js'
-
 
 
 const drawerWidth = 240;
@@ -48,7 +47,7 @@ const useStyles = makeStyles(theme => ({
   },
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
-    width: drawerWidth,
+      width: drawerWidth,
   },
   content: {
     flexGrow: 1,
@@ -90,9 +89,11 @@ export default function ResponsiveDrawer(props) {
       <Divider />
       <MenuList >
               {['Projects', 'Resume', 'Blog', 'About','Contact'].map((text, index) => (
-            <MenuItem
-                key={text}
-                selected={index === selectedIndex}
+                  <MenuItem
+                     component={Link}
+                      to={`/${text}`}
+                     key={text}
+                    selected={index === selectedIndex}
                 onClick={event => handleMenuItemClick(event, index)}
             >
                     {text}
@@ -113,7 +114,9 @@ export default function ResponsiveDrawer(props) {
     return (
     <div className={classes.root}>
       <CssBaseline />
-      <AppBar position="fixed" className={classes.appBar}>
+      <AppBar position="fixed"
+          className={classes.appBar}
+      >
         <Toolbar>
           <IconButton
             color="inherit"
@@ -150,6 +153,7 @@ export default function ResponsiveDrawer(props) {
         </Hidden>
         <Hidden xsDown implementation="css">
             <Drawer
+            
             classes={{
               paper: classes.drawerPaper,
             }}

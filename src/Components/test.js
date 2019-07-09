@@ -20,7 +20,8 @@ class Test extends Component {
         return(
     <Grid container>
         <Grid item xs={12} sm={6}>
-            <Paper style={styles.Paper}>
+            <Paper style={styles.Paper}   
+            >
                     left pane
             </Paper>
         </Grid>
