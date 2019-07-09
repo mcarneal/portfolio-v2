@@ -8,6 +8,7 @@ import Contact from './Contact/index.js'
 import Projects from './Projects/index.js'
 import Blog from './Blog/index.js'
 import Fade from '@material-ui/core/Fade';
+import Box from '@material-ui/core/Box';
 
 
 class Home extends Component{
@@ -28,7 +29,9 @@ class Home extends Component{
                         timeout={1000}
                     >
 
-                <div className='home'>
+                    <div className='home'>
+            <Box bgcolor='text.hint' style={{height : '100vh'}}>        
+                            
                     <NavBar changeThemeHandler={this.props.changeThemeHandler}>
                         <Switch>
                             <Route exact path='/' render={()=> <Test />}/>
@@ -39,7 +42,9 @@ class Home extends Component{
                             <Route exact path='/Blog' render={()=> <Blog />}/>
                             </Switch>
                         </NavBar>
+                </Box>
                     </div>
+            
                 </Fade>
 
         </BrowserRouter>
