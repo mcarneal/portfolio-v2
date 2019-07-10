@@ -30,8 +30,7 @@ class Home extends Component{
                     >
 
                     <div className='home'>
-            <Box bgcolor='text.hint' style={{height : '100vh', overflow : 'scroll'}}>        
-                            
+                    <Box bgcolor='text.hint' style={{height : '100vh', overflow : 'scroll'}}>                
                     <NavBar changeThemeHandler={this.props.changeThemeHandler}>
                         <Switch>
                             <Route exact path='/' render={()=> <Test />}/>
