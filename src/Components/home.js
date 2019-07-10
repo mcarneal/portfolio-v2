@@ -30,7 +30,7 @@ class Home extends Component{
                     >
 
                     <div className='home'>
-            <Box bgcolor='text.hint' style={{height : '100vh'}}>        
+            <Box bgcolor='text.hint' style={{height : '100vh', overflow : 'scroll'}}>        
                             
                     <NavBar changeThemeHandler={this.props.changeThemeHandler}>
                         <Switch>
