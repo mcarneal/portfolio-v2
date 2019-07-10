@@ -7,6 +7,7 @@ import Welcome from './Components/welcome.js'
 import Home from './Components/home.js'
 import Button from '@material-ui/core/Button';
 import NewYork from './newyork.jpg'
+import { withRouter } from 'react-router-dom'
 
 const particlesOpt = {
     particles : {
@@ -105,6 +106,10 @@ class App extends Component{
         this.setState({view : 'home'})
     }
 
+    componentDidMount(){
+        this.props.history.push('/')
+    }
+
     render(){
         return (
             <div className='App' style={{backgroundImage :`url(${this.state.background})`}}>
@@ -123,4 +128,4 @@ class App extends Component{
     }
 }
 
-export default App;
+export default withRouter(App);
