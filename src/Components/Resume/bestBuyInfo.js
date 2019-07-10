@@ -38,7 +38,7 @@ class BestBuyInfo extends Component{
         Associate, October 2010 - November, 2011
             </Typography>
             <hr style={{width : '100%'}}></hr><br></br>
-            <Typography style={{color : '#E0E0E0'}} variant='subtitle1' >
+            <Typography style={{color : '#E0E0E0'}} variant='subtitle2' >
                     + Provided sales and support solutions for retail clients.<br></br> 
                         + Installed and configured Windows environments and security solutions.<br></br> 
                             + Troubleshoot Windows applications. <br></br>

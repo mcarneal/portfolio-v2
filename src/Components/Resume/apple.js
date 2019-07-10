@@ -41,14 +41,14 @@ class Apple extends Component {
             >
             <Typography
                 style={{color : '#E0E0E0'}}
-                    variant='h5'
+                    variant='subtitle1'
                 >
                     Apple Inc. 2011 - 2019
             </Typography>
             <hr style={{ width : '70%'}}></hr> 
             <Typography
                 style={{color : '#E0E0E0'}}
-                variant='h5'
+                variant='subtitle1'
             >
                     New York, New York
         </Typography>

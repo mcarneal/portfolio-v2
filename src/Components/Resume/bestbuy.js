@@ -42,14 +42,14 @@ class BestBuy extends Component{
             <Box>
             <Typography
                 style={{color : '#E0E0E0'}}
-                    variant='h5'
+                    variant='subtitle1'
                 >
                     Best Buy Geek Squad. 2010 - 2011
             </Typography>
             <hr style={{ width : '70%'}}></hr> 
             <Typography
                 style={{color : '#E0E0E0'}}
-                variant='h5'
+                variant='subtitle1'
             >
                     Denver, CO
         </Typography>

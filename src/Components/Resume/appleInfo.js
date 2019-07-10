@@ -31,7 +31,7 @@ class AppleInfo extends Component{
 
         <Typography 
             style={{color : '#E0E0E0'}}
-            variant='h6'
+            variant='subtitle2'
         >
                 Apple Certified Technician Tier 1, December, 2011 - February 2013<br></br>
                 Apple Certified Technician Tier 2, February, 2013 - August 2016<br></br>
