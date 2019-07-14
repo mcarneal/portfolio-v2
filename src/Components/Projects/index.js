@@ -12,34 +12,53 @@ import HtmlLogo from '../../html5.png'
 import RailsLogo from '../../rails.png'
 import CssLogo from '../../css3.png'
 import AppImage from '../../image.png'
+import { makeStyles } from '@material-ui/core/styles';
 
-    const styles = {
+
+const styles = makeStyles(theme =>({
         Box : {
         textAlign : 'left',   
         padding : 20,
         marginLeft : 5,
         marginRight : 5,
         height : 'auto',
-    }
-}
+        },
+         item2: {
+    order: 3,
+    [theme.breakpoints.up('sm')]: {
+      order: 2,
+    },
+  },
+  item3: {
+    order: 2,
+    [theme.breakpoints.up('sm')]: {
+      order: 3,
+    },
+  },
+}))
 
 
 
-class Projects extends Component{
+export default function Projects(){
+const classes = styles();
 
 
-    render(){
+
         return(
             <Grid container
-            direction-sm='colum-reverse'
+                direction={{ xs: "column-reverse", sm : "column-reverse"  }}
+                justify='space-evenly'
             >
-        <Grid item  xs={12} sm={6}>
+                <Grid
+                    item xs={12} sm={6} md={4}
+                    className={classes.item2}
+                >
            <KarmaCalculatorCard />
        </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6} className={classes.item3}>
             <Box
                 justify='center'
-                style={styles.Box}
+                className={classes.Box}
             >
             <hr style={{ width : '100%'}}></hr> 
             <Typography
@@ -64,9 +83,7 @@ class Projects extends Component{
 
         )
     }
-}
 
-export default Projects
 
 
 
