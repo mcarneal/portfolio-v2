@@ -18,21 +18,20 @@ const styles = makeStyles(theme =>({
         padding : 20,
         marginLeft : 5,
         marginRight : 5,
-        height : 'auto',
+            height : 'auto',
         }
 }))
 
 
 
 
-export default function KarmaCalculator(){
+export default function IssueHandlr(){
     
     const classes = styles();
 
 
       return (
             <Box
-                justify='center'
                 className={classes.Box}
             >
             <hr style={{ width : '100%'}}></hr> 
@@ -40,10 +39,9 @@ export default function KarmaCalculator(){
                 style={{color : '#E0E0E0'}}
                 variant='subtitle1'
             >
-                    + Incorporated WRLD.JS, a open source JavaScript 3D map, for a visually striking interactive user experience.<br></br>  
-                    + Designed a Interactive frontend with React and Redux, and React-Semantic. <br></br>
-                    + Developed Rails Backend to facilitate a seamless relationship between users by incorporating websockets.<br></br>
-                    + Authenticated users for security by implementing JSON Web Tokens, local storage, and Bcrypt.<br></br>  
+                    + Developed a Rails API Backend, with endpoints for Employees, Assignments, and Customer Issues.<br></br>  
+                        + Implemented user interface employing React and Redux with a combination of custom CSS and Semantic-React for styling.<br></br> 
+                            + Utilized JSON Web Tokens and local storage to store encrypted user Information client side. <br></br>
 
             </Typography>
             <img src={ReactLogo} alt='react log' style={{width : '60px'}} />
@@ -56,3 +54,4 @@ export default function KarmaCalculator(){
     )
   
 }
+
