@@ -6,13 +6,7 @@ import { withRouter } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import Fade from '@material-ui/core/Fade';
 import Box from '@material-ui/core/Box'
-import ReactLogo from '../react.png'
-import ReduxLogo from '../redux.png'
-import HtmlLogo from '../html5.png'
-import RailsLogo from '../rails.png'
-import CssLogo from '../css3.png'
-import JavaScriptLogo from '../javascript.png'
-import MaterialLogo from '../materiallogo.png'
+
 
 const styles = makeStyles(theme =>({
     Box : {
@@ -39,11 +33,8 @@ export default function HomePage(){
                  spacing={0}
             >
                 <Grid item xs={12} sm={6} md={6}>
-                    <Fade in={true} timeout={3000}>
-                        <Box>
-      
-        </Box>
-</Fade>
+                    <Box>
+                </Box>
             </Grid>
             <Grid item xs={12} sm={6} md={5}
             alignItems='center'>
@@ -74,36 +65,9 @@ I see the future as a marriage between technology and artistry, and I look forwa
 <br></br>
 <br></br>
 
-    Michael G Carneal
+Michael G Carneal
 
             </Typography>
-            <br></br>
-            <Typography
-                style={{textDecoration : 'underline'}}
-                align='center'
-                style={{color : '#E0E0E0'}}
-                variant='h4'
-            >
-                    Developer Skills
-        </Typography>
-        <br></br>
-        <Typography
-            align='center'
-                style={{color : '#E0E0E0'}}
-                variant='h4'
-            >
-                    Frontend
-    </Typography>
-    <br></br>
-
-            <img src={ReactLogo} alt='react log' style={{width : '100px'}} />
-            <img src={ReduxLogo} alt='react log' style={{width : '100px'}} />
-            <img src={JavaScriptLogo} alt='react log' style={{width : '100px'}} />
-            <img src={HtmlLogo} alt='redux log' style={{width : '100px'}} />
-            <img src={CssLogo} alt='redux log' style={{width : '87px'}} />
-            <img src={MaterialLogo} alt='redux log' style={{width : '100px'}} />
-      
-
         </Box>
 </Fade>
 
@@ -112,7 +76,6 @@ I see the future as a marriage between technology and artistry, and I look forwa
 
         )
     }
-
 
 
 
