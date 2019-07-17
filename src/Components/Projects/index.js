@@ -114,7 +114,6 @@ const classes = styles();
        </Grid>
        <Grid item xs={12} sm={6}>
            <CrimeWatch/>
-    <button onClick={scroll}>click</button>
                
         </Grid>
 
