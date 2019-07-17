@@ -7,11 +7,14 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Image from '../../image.png'
+import Image from '../../issueHandlr.png'
 import CardHeader from '@material-ui/core/CardHeader';
 import Box from '@material-ui/core/Box'
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Dialog from '@material-ui/core/Dialog';
+import Fade from '@material-ui/core/Fade';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 
 
 
@@ -28,7 +31,7 @@ import Dialog from '@material-ui/core/Dialog';
 
 const useStyles = makeStyles({
   card: {
-    maxWidth: 345,
+    maxWidth: 450,
   },
     dialogPaper: {
         minHeight: 'auto',
@@ -52,6 +55,7 @@ function SimpleDialog(props) {
 
   return (
       <Dialog 
+
          classes={{paper : classes.dialogPaper}}
          fullWidth={fullWidth}
          maxWidth={maxWidth}
@@ -61,12 +65,13 @@ function SimpleDialog(props) {
                 width : '100%',
                 height : '50vh'
             }}
-            src="https://www.youtube.com/embed/VlNON2ZcYac"
-        frameBorder='0'
-        allow='autoplay; encrypted-media'
+        src="https://www.youtube.com/embed/aEn-2VJ4DNA"
+        frameBorder='0' 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
         allowFullScreen
         title='video'
-/>
+
+      />
     </Dialog>
   );
 }
@@ -74,25 +79,32 @@ function SimpleDialog(props) {
 export default function IssueHandlrCard(props) {
 
 
- const [fullWidth, setFullWidth] = React.useState(true);
+  const [fullWidth, setFullWidth] = React.useState(true);
   const [maxWidth, setMaxWidth] = React.useState('sm');
   const [open, setOpen] = React.useState(false);
 
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  function handleClick(event) {
+    setAnchorEl(event.currentTarget);
+  }
+
+  function handleClose() {
+    setAnchorEl(null);
+  }
   function handleClickOpen() {
     setOpen(true);
   }
 
-  const handleClose = value => {
+  const handleClickClose = value => {
     setOpen(false);
   };
 
  const classes = useStyles();
     return (
+        <Fade in={true} timeout={1000}>
         <Box style={styles.Box}>
       <Card className={classes.card}>
-          <CardHeader
-          title='IssueHandlr'>
-      </CardHeader>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -111,13 +123,25 @@ export default function IssueHandlrCard(props) {
         <Button onClick={handleClickOpen} size="small" color="primary">
           Demo
         </Button>
- <SimpleDialog  open={open} onClose={handleClose} />
-        <Button size="small" color="primary">
-          Learn More
+ <SimpleDialog  open={open} onClose={handleClickClose} />
+        <Button size="small" color="primary" onClick={handleClick}>
+          GitHub
         </Button>
+<Menu
+        id="simple-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+      >
+        <MenuItem onClick={handleClose}>Front End</MenuItem>
+        <MenuItem onClick={handleClose}>Back End</MenuItem>
+      </Menu>
+
       </CardActions>
   </Card>
   </Box>
+  </Fade>
   );
 }
 

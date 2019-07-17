@@ -5,10 +5,14 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'typeface-roboto';
 import { BrowserRouter } from 'react-router-dom'
+import ScrollToTop from './Components/ScrollToTop.js'
+
 
 ReactDOM.render(
     <BrowserRouter>
-        <App />
+        <ScrollToTop>
+            <App />
+    </ScrollToTop>
 </BrowserRouter>
 
         , document.getElementById('root'));

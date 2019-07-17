@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Image from '../../image.png'
+import Image from '../../crimeWatch.png'
 import CardHeader from '@material-ui/core/CardHeader';
 import Box from '@material-ui/core/Box'
 import DialogTitle from '@material-ui/core/DialogTitle';
@@ -15,6 +15,7 @@ import Dialog from '@material-ui/core/Dialog';
 import Fade from '@material-ui/core/Fade';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+
 
 
     const styles = {
@@ -48,7 +49,7 @@ function SimpleDialog(props) {
     onClose(selectedValue);
   }
 
-    function handleListItemClick(value) {
+  function handleListItemClick(value) {
     onClose(value);
   }
 
@@ -57,28 +58,31 @@ function SimpleDialog(props) {
          classes={{paper : classes.dialogPaper}}
          fullWidth={fullWidth}
          maxWidth={maxWidth}
-         onClose={handleClose} aria-labelledby="simple-dialog-title" {...other}>
+          onClose={handleClose} aria-labelledby="simple-dialog-title" {...other}>
         <iframe 
             style={{
                 width : '100%',
                 height : '50vh'
             }}
-        src="https://www.youtube.com/embed/VlNON2ZcYac"
-        frameBorder='0'
-        allow='autoplay; encrypted-media'
+        src="https://www.youtube.com/embed/lEmGEKkhRvU"
+        frameBorder='0' 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
         allowFullScreen
         title='video'
-/>
+
+      />
+
     </Dialog>
   );
 }
 
-export default function ImgMediaCard(props) {
+export default function IssueHandlrCard(props) {
 
-    const [fullWidth, setFullWidth] = React.useState(true);
-    const [maxWidth, setMaxWidth] = React.useState('sm');
-    const [open, setOpen] = React.useState(false);
-    const [anchorEl, setAnchorEl] = React.useState(null);
+
+ const [fullWidth, setFullWidth] = React.useState(true);
+  const [maxWidth, setMaxWidth] = React.useState('sm');
+  const [open, setOpen] = React.useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
 
   function handleClick(event) {
     setAnchorEl(event.currentTarget);
@@ -109,9 +113,8 @@ export default function ImgMediaCard(props) {
           title="Karma Calculator"
         />
         <CardContent>
-            <Typography variant="body2" color="textSecondary" component="p">
-A social media based web app designed for members to share good or bad interactions. Where members can rate others to encourage positive moral behavior. 
-
+          <Typography variant="body2" color="textSecondary" component="p">
+                    A simple to use ticketing system for a team of IT Professionals to organize, assign, and track client issues.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -133,9 +136,12 @@ A social media based web app designed for members to share good or bad interacti
         <MenuItem onClick={handleClose}>Front End</MenuItem>
         <MenuItem onClick={handleClose}>Back End</MenuItem>
       </Menu>
+
       </CardActions>
   </Card>
   </Box>
   </Fade>
   );
 }
+
+

@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment, useEffect } from 'react'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box';
@@ -16,6 +16,9 @@ import AppImage from '../../image.png'
 import { makeStyles } from '@material-ui/core/styles';
 import IssueHandlr from './issueHandler.js'
 import IssueHandlrCard from './issueHandlerCard.js'
+import CrimeWatch from './crimeWatch.js'
+import CrimeWatchCard from './crimeWatchCard.js'
+import ScrollToTopOnMount from '../ScrollToTop.js'
 
 const styles = makeStyles(theme =>({
         Box : {
@@ -40,14 +43,25 @@ const styles = makeStyles(theme =>({
 }))
 
 
-
 export default function Projects(){
+    
+    const scroll = () => {
+       
+        window.scrollTo(0,0)
+    }
 const classes = styles();
-
-
 
     return(
         <Fragment>
+            <Typography
+                style={{color : '#E0E0E0'}}
+                variant='h4'
+            >
+            Karma Calculator
+        </Typography>
+
+        <br></br>
+
             <Grid container
                 justify='space-evenly'
             >
@@ -61,6 +75,14 @@ const classes = styles();
         </Grid>
 
     </Grid>
+            V<Typography
+                style={{color : '#E0E0E0'}}
+                variant='h4'
+            >
+            IssueHandlr
+        </Typography>
+        <br></br>
+
     <Grid container
                 justify='space-evenly'
             >
@@ -71,6 +93,29 @@ const classes = styles();
        </Grid>
        <Grid item xs={12} sm={6}>
            <IssueHandlr />
+        </Grid>
+
+    </Grid>
+            <Typography
+                style={{color : '#E0E0E0'}}
+                variant='h4'
+            >
+            Crime Watch
+        </Typography>
+        <br></br>
+
+            <Grid container
+                justify='space-evenly'
+            >
+                <Grid
+                    item xs={12} sm={6} md={4}
+                >
+           <CrimeWatchCard />
+       </Grid>
+       <Grid item xs={12} sm={6}>
+           <CrimeWatch/>
+    <button onClick={scroll}>click</button>
+               
         </Grid>
 
     </Grid>

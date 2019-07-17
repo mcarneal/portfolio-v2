@@ -31,11 +31,11 @@ class Home extends Component{
 
                     <div className='home'>
                     <Box bgcolor='text.hint' style={{height : '100vh', overflow : 'scroll'}}>                
-                    <NavBar changeThemeHandler={this.props.changeThemeHandler}>
+                    <NavBar aboutClickHandler={this.props.aboutClickHandler} changeThemeHandler={this.props.changeThemeHandler}>
                         <Switch>
-                            <Route exact path='/' render={()=> <Test />}/>
+                            <Route exact path='/' render={()=> <Projects />}/>
                             <Route exact path='/Resume' render={()=> <Resume />}/>
-                            <Route exact path='/About' render={()=> <About />}/>
+                            <Route exact path='/About' render={()=> <About aboutClickHandler={this.props.aboutClickHandler} />}/>
                             <Route exact path='/Contact' render={()=> <Contact />}/>
                             <Route exact path='/Projects' render={()=> <Projects />}/>
                             <Route exact path='/Blog' render={()=> <Blog />}/>

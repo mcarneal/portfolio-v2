@@ -61,16 +61,17 @@ export default function ResponsiveDrawer(props) {
   const classes = useStyles();
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [selectedIndex, setSelectedIndex] = React.useState(2);
+  const [selectedIndex, setSelectedIndex] = React.useState(0);
   const [anchorEl, setAnchorEl] = React.useState(null);
     
   function handleClickListItem(event) {
     setAnchorEl(event.currentTarget);
   }
 
-  function handleMenuItemClick(event, index) {
+    const handleMenuItemClick = (event, index)=> {
     setSelectedIndex(index);
-    setAnchorEl(null);
+        setAnchorEl(null);
+        props.aboutClickHandler(event.target.innerText)
   }
 
   function handleClose() {

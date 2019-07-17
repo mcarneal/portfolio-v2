@@ -8,6 +8,8 @@ import Home from './Components/home.js'
 import Button from '@material-ui/core/Button';
 import NewYork from './newyork.jpg'
 import { withRouter } from 'react-router-dom'
+import Profile from './profile2.jpg'
+
 
 const particlesOpt = {
     particles : {
@@ -79,31 +81,62 @@ class App extends Component{
     state = {
         view : 'landing',
         particles :noOpt,
-        background : NewYork
+        background : NewYork,
+        previousHistory : NewYork,
+        previousparticles : noOpt
     }
 
     changeThemeHandler = () => {
-        if(this.state.background === SpaceBackground){
+
+        if (this.state.background === Profile){
+            this.setState({
+                particles : noOpt,
+                background : Profile
+            })
+        }
+        else if(this.state.background === SpaceBackground){
             this.setState({
                 particles : snowParticlesOpt,
-                background : SnowBackground
+                background : SnowBackground,
+                previousHistory : SnowBackground,
+                previousparticles : snowParticlesOpt
             })
         }
         else if(this.state.background === NewYork) {
                 this.setState({
                     particles : particlesOpt,
-                    background : SpaceBackground
+                    background : SpaceBackground,
+                    previousHistory : SpaceBackground,
+                    previousparticles : particlesOpt
                 })
         } else {
             this.setState({
                 particles : noOpt,
-                background : NewYork
+                background : NewYork,
+                previousHistory : NewYork,
+                previousparticles : noOpt
             })
         }
     }
 
     clickHandler = () => {
         this.setState({view : 'home'})
+    }
+    
+    aboutClickHandler = (props) => {
+        console.log(props)
+        if (props === 'About'){
+            this.setState({
+                background : Profile,
+                particles : noOpt
+            })
+        }
+        else {
+            this.setState({
+                background : this.state.previousHistory,
+                particles : this.state.previousparticles
+            })
+        }
     }
 
     componentDidMount(){
@@ -122,7 +155,7 @@ class App extends Component{
             </div>
                 {this.state.view === 'landing' ? <Welcome 
                     clickHandler={this.clickHandler} /> : null}
-                {this.state.view === 'home' ? <Home changeThemeHandler={this.changeThemeHandler} /> : null}
+                {this.state.view === 'home' ? <Home aboutClickHandler={this.aboutClickHandler} changeThemeHandler={this.changeThemeHandler} /> : null}
             </div>
         );
     }
