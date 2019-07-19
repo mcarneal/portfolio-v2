@@ -11,7 +11,7 @@ class Blog extends Component{
         return(
             <Fragment>
             <Grid container
-                  spacing={10}
+                  spacing={5}
                   alignItems="center"
                   justify="center"
             >
@@ -28,7 +28,7 @@ class Blog extends Component{
        </Grid>
    </Grid>
             <Grid container
-                  spacing={10}
+                  spacing={5}
                   alignItems="center"
                   justify="center"
             >
@@ -37,11 +37,6 @@ class Blog extends Component{
                 >
                     <PersonalTerminal />
                 </Grid>
-                <Grid
-                    item xs={12} sm={6} md={4}
-                >
-
-       </Grid>
     </Grid>
     </Fragment>
            

@@ -19,7 +19,10 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-
+import Instagram from '../insta.png'
+import Linkedin from '../linkedin.png'
+import GitHub from '../github.png'
+import Twitter from '../twitter.png'
 
 const drawerWidth = 240;
 
@@ -89,7 +92,7 @@ export default function ResponsiveDrawer(props) {
       </Hidden>
       <Divider />
       <MenuList >
-              {['Projects', 'Resume', 'Blog', 'About','Contact'].map((text, index) => (
+              {['Projects', 'Resume', 'Blog', 'About'].map((text, index) => (
                   <MenuItem
                      component={Link}
                       to={`/${text}`}
@@ -108,7 +111,22 @@ export default function ResponsiveDrawer(props) {
         Change Theme
     </MenuItem>
 
-      </MenuList>
+</MenuList>
+<Divider />
+<br></br>
+<MenuItem>
+    <img src={GitHub} alt='github link'  />
+      </MenuItem>
+<MenuItem>
+    <img src={Linkedin} alt='linkedin link'  />
+</MenuItem>
+<MenuItem>
+    <img src={Twitter} alt='twitter link'  />
+</MenuItem>
+<MenuItem>
+    <img src={Instagram} alt='instagram link'  />
+</MenuItem>
+
     </div>
   );
 

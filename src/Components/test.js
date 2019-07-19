@@ -96,12 +96,12 @@ I see the future as a marriage between technology and artistry, and I look forwa
     </Typography>
     <br></br>
 
-            <img src={ReactLogo} alt='react log' style={{width : '100px'}} />
-            <img src={ReduxLogo} alt='react log' style={{width : '100px'}} />
-            <img src={JavaScriptLogo} alt='react log' style={{width : '100px'}} />
-            <img src={HtmlLogo} alt='redux log' style={{width : '100px'}} />
-            <img src={CssLogo} alt='redux log' style={{width : '87px'}} />
-            <img src={MaterialLogo} alt='redux log' style={{width : '100px'}} />
+            <img src={ReactLogo} alt='react log' style={{width : '90px'}} />
+            <img src={ReduxLogo} alt='react log' style={{width : '90px'}} />
+            <img src={JavaScriptLogo} alt='react log' style={{width : '90px'}} />
+            <img src={HtmlLogo} alt='redux log' style={{width : '90px'}} />
+            <img src={CssLogo} alt='redux log' style={{width : '80px'}} />
+            <img src={MaterialLogo} alt='redux log' style={{width : '90px'}} />
       
 
         </Box>
