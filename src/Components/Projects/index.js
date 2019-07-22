@@ -25,7 +25,8 @@ const styles = makeStyles(theme =>({
         textAlign : 'left',   
         padding : 20,
         marginLeft : 5,
-        marginRight : 5,
+            marginRight : 5,
+            marginTop : 5,
         height : 'auto',
         },
          item2: {
