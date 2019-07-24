@@ -132,10 +132,15 @@ export default function IssueHandlrCard(props) {
         keepMounted
         open={Boolean(anchorEl)}
         onClose={handleClose}
-      >
-        <MenuItem onClick={handleClose}>Front End</MenuItem>
-        <MenuItem onClick={handleClose}>Back End</MenuItem>
-      </Menu>
+>
+<a href="https://github.com/mcarneal/CrimeWatch/tree/master/Crime_Watch_frontend" target="_blank" style={{ textDecoration : 'none' }}>
+    <MenuItem onClick={handleClose}>Front End</MenuItem>
+</a>
+<a href="https://github.com/mcarneal/CrimeWatch/tree/master/Crime_Watch_backend" target="_blank" style={{ textDecoration : 'none' }}>
+
+    <MenuItem onClick={handleClose}>Back End</MenuItem>
+    </a>
+        </Menu>
 
       </CardActions>
   </Card>

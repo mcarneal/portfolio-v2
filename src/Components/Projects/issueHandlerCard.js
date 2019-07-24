@@ -133,10 +133,15 @@ export default function IssueHandlrCard(props) {
         keepMounted
         open={Boolean(anchorEl)}
         onClose={handleClose}
-      >
-        <MenuItem onClick={handleClose}>Front End</MenuItem>
+>
+<a href="https://github.com/mcarneal/issueHandler-v2" target="_blank" style={{ textDecoration : 'none' }}>
+    <MenuItem onClick={handleClose}>Front End</MenuItem>
+</a>
+<a href="https://github.com/mcarneal/issueHandlrBackend" target="_blank" style={{ textDecoration : 'none' }}>
+
         <MenuItem onClick={handleClose}>Back End</MenuItem>
-      </Menu>
+</a>  
+        </Menu>
 
       </CardActions>
   </Card>

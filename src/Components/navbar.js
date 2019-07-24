@@ -75,7 +75,12 @@ export default function ResponsiveDrawer(props) {
     setSelectedIndex(index);
         setAnchorEl(null);
         props.aboutClickHandler(event.target.innerText)
-  }
+    }
+
+    const socialLink = (props) => {
+        console.log(props)
+        
+    }
 
   function handleClose() {
     setAnchorEl(null);
@@ -114,19 +119,28 @@ export default function ResponsiveDrawer(props) {
 </MenuList>
 <Divider />
 <br></br>
-<MenuItem>
-    <img src={GitHub} alt='github link'  />
-      </MenuItem>
-<MenuItem>
-    <img src={Linkedin} alt='linkedin link'  />
-</MenuItem>
-<MenuItem>
+
+<a href="https://github.com/mcarneal" target="_blank" style={{ textDecoration : 'none' }}>
+
+    <MenuItem>
+        <img src={GitHub} alt='github link'  />
+    </MenuItem>
+      </a>
+<a href="https://www.linkedin.com/in/michael-carneal/" target="_blank" style={{ textDecoration : 'none' }}>
+
+    <MenuItem>
+        <img src={Linkedin} alt='linkedin link'  />
+    </MenuItem>
+    </a>
+    <MenuItem>
     <img src={Twitter} alt='twitter link'  />
-</MenuItem>
+      </MenuItem>
+<a href="https://www.instagram.com/michaelcarneal/?hl=en" target="_blank" style={{ textDecoration : 'none' }}>
+
 <MenuItem>
     <img src={Instagram} alt='instagram link'  />
 </MenuItem>
-
+      </a>
     </div>
   );
 

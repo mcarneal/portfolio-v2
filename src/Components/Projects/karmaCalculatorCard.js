@@ -129,9 +129,14 @@ A social media based web app designed for members to share good or bad interacti
         keepMounted
         open={Boolean(anchorEl)}
         onClose={handleClose}
-      >
-        <MenuItem onClick={handleClose}>Front End</MenuItem>
-        <MenuItem onClick={handleClose}>Back End</MenuItem>
+>
+    <a href="https://github.com/mcarneal/karma-calculator-frontend" target="_blank" style={{ textDecoration : 'none' }}>
+            <MenuItem onClick={handleClose}>Front End</MenuItem>
+        </a>
+<a href="https://github.com/mcarneal/karma-calculator-backend" target="_blank" style={{ textDecoration : 'none' }}>
+
+    <MenuItem onClick={handleClose}>Back End</MenuItem>
+    </a>
       </Menu>
       </CardActions>
   </Card>
