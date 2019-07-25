@@ -13,6 +13,11 @@ import RailsLogo from '../rails.png'
 import CssLogo from '../css3.png'
 import JavaScriptLogo from '../javascript.png'
 import MaterialLogo from '../materiallogo.png'
+import RubyLogo from '../Ruby_logo.svg'
+import GitLogo from  '../git.png'
+import HerokuLogo from '../heroku.png'
+import PostgressLogo from '../postgress.png'
+import AWS from '../aws.png'
 
 const styles = makeStyles(theme =>({
     Box : {
@@ -87,13 +92,6 @@ I see the future as a marriage between technology and artistry, and I look forwa
                     Developer Skills
         </Typography>
         <br></br>
-        <Typography
-            align='center'
-                style={{color : '#E0E0E0'}}
-                variant='h4'
-            >
-                    Frontend
-    </Typography>
     <br></br>
 
             <img src={ReactLogo} alt='react log' style={{width : '90px'}} />
@@ -102,6 +100,11 @@ I see the future as a marriage between technology and artistry, and I look forwa
             <img src={HtmlLogo} alt='redux log' style={{width : '90px'}} />
             <img src={CssLogo} alt='redux log' style={{width : '80px'}} />
             <img src={MaterialLogo} alt='redux log' style={{width : '90px'}} />
+            <img src={RailsLogo} alt='redux log' style={{width : '90px'}} />
+            <img src={RubyLogo} alt='redux log' style={{width : '90px'}} />
+            <img src={GitLogo} alt='redux log' style={{width : '90px'}} />
+            <img src={HerokuLogo} alt='redux log' style={{width : '90px'}} />
+            <img src={PostgressLogo} alt='redux log' style={{width : '90px'}} />
       
 
         </Box>
