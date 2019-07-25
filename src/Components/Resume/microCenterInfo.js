@@ -39,8 +39,8 @@ class MicroCenterInfo extends Component {
             <hr style={{width : '100%'}}></hr><br></br>
             <Typography style={{color : '#E0E0E0'}} variant='subtitle2' >
                     + Drove sales solutions above 20% of target gross profit<br></br> 
-                        + Communicate and listen to clients while offering custom to order desktop machines.<br></br> 
-                            + Configure, build, and install hardware plus software for custom purchase desktop configurations <br></br>
+                        + Communicated and listened to clients while offering custom to order desktop machines.<br></br> 
+                            + Configured, buily, and installed hardware plus software for custom purchase desktop configurations <br></br>
 
             </Typography>
         </Box>        

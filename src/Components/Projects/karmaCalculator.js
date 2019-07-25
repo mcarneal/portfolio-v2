@@ -45,8 +45,8 @@ export default function KarmaCalculator(){
                 style={{color : '#E0E0E0'}}
                 variant='subtitle1'
             >
-                    + Incorporated WRLD.JS, a open source JavaScript 3D map, for a visually striking interactive user experience.<br></br>  
-                    + Designed a Interactive frontend with React and Redux, and React-Semantic. <br></br>
+                    + Incorporated WRLD.JS, an open source JavaScript 3D map, for a visually striking interactive user experience.<br></br>  
+                    + Designed an Interactive frontend with React and Redux, and React-Semantic. <br></br>
                     + Developed Rails Backend to facilitate a seamless relationship between users by incorporating websockets.<br></br>
                     + Authenticated users for security by implementing JSON Web Tokens, local storage, and Bcrypt.<br></br>  
 

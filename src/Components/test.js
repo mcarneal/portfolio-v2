@@ -94,17 +94,17 @@ I see the future as a marriage between technology and artistry, and I look forwa
         <br></br>
     <br></br>
 
-            <img src={ReactLogo} alt='react log' style={{width : '90px'}} />
-            <img src={ReduxLogo} alt='react log' style={{width : '90px'}} />
-            <img src={JavaScriptLogo} alt='react log' style={{width : '90px'}} />
-            <img src={HtmlLogo} alt='redux log' style={{width : '90px'}} />
-            <img src={CssLogo} alt='redux log' style={{width : '80px'}} />
-            <img src={MaterialLogo} alt='redux log' style={{width : '90px'}} />
-            <img src={RailsLogo} alt='redux log' style={{width : '90px'}} />
-            <img src={RubyLogo} alt='redux log' style={{width : '90px'}} />
-            <img src={GitLogo} alt='redux log' style={{width : '90px'}} />
-            <img src={HerokuLogo} alt='redux log' style={{width : '90px'}} />
-            <img src={PostgressLogo} alt='redux log' style={{width : '90px'}} />
+            <img src={ReactLogo} alt='react logo' style={{width : '90px'}} />
+            <img src={ReduxLogo} alt='redux logo' style={{width : '90px'}} />
+            <img src={JavaScriptLogo} alt='javascript logo' style={{width : '90px'}} />
+            <img src={HtmlLogo} alt='html logo' style={{width : '90px'}} />
+            <img src={CssLogo} alt='css logo' style={{width : '80px'}} />
+            <img src={MaterialLogo} alt='material logo' style={{width : '90px'}} />
+            <img src={RailsLogo} alt='rails logo' style={{width : '90px'}} />
+            <img src={RubyLogo} alt='ruby logo' style={{width : '90px'}} />
+            <img src={GitLogo} alt='git logo' style={{width : '90px'}} />
+            <img src={HerokuLogo} alt='heroku logo' style={{width : '90px'}} />
+            <img src={PostgressLogo} alt='postgress logo' style={{width : '90px'}} />
       
 
         </Box>
