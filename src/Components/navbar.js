@@ -71,16 +71,12 @@ export default function ResponsiveDrawer(props) {
     setAnchorEl(event.currentTarget);
   }
 
-    const handleMenuItemClick = (event, index)=> {
+  const handleMenuItemClick = (event, index)=> {
     setSelectedIndex(index);
         setAnchorEl(null);
         props.aboutClickHandler(event.target.innerText)
     }
 
-    const socialLink = (props) => {
-        console.log(props)
-        
-    }
 
   function handleClose() {
     setAnchorEl(null);
@@ -197,8 +193,8 @@ export default function ResponsiveDrawer(props) {
           </Drawer>
         </Hidden>
         </nav>
-        <main className={classes.content}>
-            <div className={classes.toolbar} />
+        <main className={classes.content} id='main-cont'>
+            <div className={classes.toolbar} id='content-container' />
                 {children}
         </main>
     </div>

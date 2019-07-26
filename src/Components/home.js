@@ -22,6 +22,12 @@ class Home extends Component{
     }
 
 
+    componentDidUpdate(prevPorps){
+        let main = document.getElementById('main-cont')
+        main.scrollIntoView()
+    }
+
+
     render(){
         return(
             <BrowserRouter>
